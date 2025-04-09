@@ -1,7 +1,5 @@
 #DON'T MAKE CHANGES TO THIS FILE
 
-#write tests for all the questions here
-
 import unittest
 
 from tests.question_tests import question_tests

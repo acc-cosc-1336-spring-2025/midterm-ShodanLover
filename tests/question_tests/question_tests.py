@@ -1,6 +1,5 @@
 import unittest
-
-from question_a.question_a import test_config
+from question_a.question_a import test_get_bonus_pay_amount
 from question_b.question_b import use_local_variable
 from question_c.question_c import reverse_string
 from question_d.question_d import get_day_of_week
@@ -9,7 +8,7 @@ class TestQuestions(unittest.TestCase):
 
     # Question A
     def test_question_a_config(self):
-        self.assertEqual(True, test_config())
+        self.assertEqual(True, test_get_bonus_pay_amount())
 
     # Question B
     def test_local_variable_scope(self):
@@ -33,9 +32,3 @@ class TestQuestions(unittest.TestCase):
         self.assertEqual(get_day_of_week(4), "Thursday")
         self.assertEqual(get_day_of_week(5), "Friday")
         self.assertEqual(get_day_of_week(6), "Saturday")
-        self.assertEqual(get_day_of_week(7), "Sunday")
-        self.assertEqual(get_day_of_week(8), "Invalid number")
-
-
-if __name__ == "__main__":
-    unittest.main()

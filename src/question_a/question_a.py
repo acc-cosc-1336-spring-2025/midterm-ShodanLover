@@ -19,5 +19,4 @@ def test_get_bonus_pay_amount():
     assert get_bonus_pay_amount(1000) == 70
     assert get_bonus_pay_amount(1500) == 120
     assert get_bonus_pay_amount(2000) == "Invalid arguments"
-
-test_get_bonus_pay_amount()
+    return True  
